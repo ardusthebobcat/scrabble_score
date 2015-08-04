@@ -10,4 +10,7 @@ describe("String#scrabble_score") do
   it("returns a scrabble score for an entire word") do
     expect("cat".scrabble_score()).to(eq(5))
   end
+  it("returns a scrabble score for a longer word") do
+    expect("jerry".scrabble_score()).to(eq(15))
+  end
 end
